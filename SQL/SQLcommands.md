@@ -81,7 +81,11 @@ dumping into .sql file `pg_dump -cC --insert -U username dbname > dbname.sql`
 #### with conditions
 `DELETE FROM table_name WHERE condition;`
 
+## PSQL query from bash script
+`psql -X --username=username --dbname=target_db_name --no-align --tuples-only -c` this command allows to query database from script. `-c` flag is for running a single command and exiting. 
+`-X`, `--no-align`, `--tuples-only` are for formatting
 
+Saving this in PSQL variable allows us to query using `$($PSQL "query")`
 
 
 
