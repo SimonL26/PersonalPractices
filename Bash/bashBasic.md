@@ -118,3 +118,19 @@ Calling a function
 Set random range with % operator `RANDOM % 70` will return random int in the range of 0-69
 ***Read user input***
 `read VARNAME` reads userinput and assign it to VARNAME
+
+### Commands
+***output to file***
+`command > filename`
+***append output to file***
+`command >> filename`
+***file content to command argument***
+`command < filename`
+***read print file***
+`cat filename`
+***find matching pattern in file***
+`grep 'pattern' filename`
+***replace pattern with values***
+`sed s/pattern_to_replace/text_to_replace_it_with/ filename`
+***count word occurrence***
+`wc filename or input`
