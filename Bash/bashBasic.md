@@ -134,3 +134,15 @@ Set random range with % operator `RANDOM % 70` will return random int in the ran
 `sed s/pattern_to_replace/text_to_replace_it_with/ filename`
 ***count word occurrence***
 `wc filename or input`
+
+### Case statement
+Different user input pattern calls different statements, like switch in JAVA/Python  
+`*)` is the default
+```
+case EXPRESSION in
+    PATTERN) STATEMENT ;;
+    PATTERN) STATEMENT ;;
+    PATTERN) STATEMENT ;;
+    *) STATEMENT ;;
+esac
+```
